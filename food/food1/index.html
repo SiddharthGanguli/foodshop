@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Picker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="name">
+        <div class="icon"></div>
+        <p>FoodPicker</p>
+      </div>
+      <div class="options">
+        <div class="home"><p>Home</p></div>
+        <div class="menu"><p>Menu</p></div>
+        <div class="aboutus"><p>About Us</p></div>
+      </div>
+      <div class="searchbar">
+        <form action="">
+          <input type="search" required />
+          <i class="fa fa-search"></i>
+        </form>
+      </div>
+      <div class="oredernow">
+        <p>Order Now</p>
+      </div>
+    </div>
+
+    <div class="boxstyle">
+      <div class="food"></div>
+    </div>
+    <div id="scrolling-container">
+      <div id="scrolling-text"><h4>75% OFF</h4></div>
+    </div>
+    <div class="leaf1"></div>
+    <div class="leaf2"></div>
+    <div class="comentry">
+      <div id="animated-text">Loading...</div>
+    </div>
+
+    <div class="more">
+      <div class="m1"></div>
+      <div class="m2"></div>
+      <div class="m3"></div>
+      <div class="m4"></div>
+    </div>
+
+    <!-- footer -->
+
+    <script>
+      const clearInput = () => {
+        const input = document.getElementsByTagName("input")[0];
+        input.value = "";
+      };
+
+      //blink text -->
+      document.addEventListener("DOMContentLoaded", function () {
+        // Array of text values to display
+        var textArray = [
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, laudantium. Reprehenderit sit odit, voluptatum commodi sed doloremque a minus velit cumque modi quia?",
+          " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur et facere odit dolor, consectetur officia explicabo, sunt aliquid facilis ad repellat!",
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, maiores! In, ipsum?",
+        ];
+
+        // Get the element where the text will be displayed
+        var animatedText = document.getElementById("animated-text");
+
+        // Function to update text
+        function updateText(index) {
+          animatedText.textContent = textArray[index];
+        }
+
+        // Function to handle text animation
+        function animateText(index) {
+          // Update text initially
+          updateText(index);
+
+          // Set a timeout to change the text after 0.5 seconds
+          setTimeout(function () {
+            // Increment index or reset to 0 if it exceeds the array length
+            index = (index + 1) % textArray.length;
+
+            // Call the updateText function with the new index
+            updateText(index);
+
+            // Recursive call to continue the animation
+            animateText(index);
+          }, 3500); // 0.5 seconds in milliseconds
+        }
+
+        // Start the text animation with the initial index (0)
+        animateText(0);
+      });
+    </script>
+  </body>
+</html>
