@@ -4,51 +4,159 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Picker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
   </head>
   <body>
-    <div class="navbar">
-      <div class="name">
-        <div class="icon"></div>
-        <p>FoodPicker</p>
+    <main>
+      <div class="navbar">
+        <div class="name">
+          <div class="icon"></div>
+          <p>FoodPicker</p>
+        </div>
+        <div class="options">
+          <div class="home">Home</div>
+          <div class="menu">Menu</div>
+          <div class="aboutus">About us</div>
+        </div>
+        <div class="searchbar">
+          <form action="">
+            <input type="search" required />
+            <i class="fa fa-search"></i>
+          </form>
+        </div>
+        <div class="oredernow">
+          <p>Order Now</p>
+        </div>
       </div>
-      <div class="options">
-        <div class="home"><p>Home</p></div>
-        <div class="menu"><p>Menu</p></div>
-        <div class="aboutus"><p>About Us</p></div>
+
+      <div class="boxstyle">
+        <div class="food"></div>
       </div>
-      <div class="searchbar">
-        <form action="">
-          <input type="search" required />
-          <i class="fa fa-search"></i>
-        </form>
+      <div id="scrolling-container">
+        <div id="scrolling-text"><h4>75% OFF</h4></div>
       </div>
-      <div class="oredernow">
-        <p>Order Now</p>
+      <div class="leaf1"></div>
+      <div class="leaf2"></div>
+      <div class="comentry">
+        <div id="animated-text">Loading...</div>
       </div>
-    </div>
+<div class="foods">
+  <div class="food1"></div>
+  <div class="food2"></div>
+  <div class="food3"></div>
+  <div class="food4"></div>
+</div>
+<div class="foods1">
+  <div class="food1"></div>
+  <div class="food2"></div>
+  <div class="food3"></div>
+  <div class="food4"></div>
+</div>
+      <div class="more">
+        <div class="c1up">
+          <div class="hide"></div>
+          <div class="m1">
 
-    <div class="boxstyle">
-      <div class="food"></div>
-    </div>
-    <div id="scrolling-container">
-      <div id="scrolling-text"><h4>75% OFF</h4></div>
-    </div>
-    <div class="leaf1"></div>
-    <div class="leaf2"></div>
-    <div class="comentry">
-      <div id="animated-text">Loading...</div>
-    </div>
+        </div>
+        </div>
+        <div class="c1up">
+          <div class="hide"></div>
+          <div class="m2">
+        </div>
+        </div>
+        <div class="c1up">
+          <div class="hide"></div>
+          <div class="m3">
+        </div>
+        </div>
+        <div class="c1up">
+          <div class="hide"></div>
+          <div class="m4">
+        </div>
+        </div>
+      </div>
+      <div class="more1">
+        <div class="c1up">
+          <div class="hide"></div>
+          <div class="m1">
+        </div>
+        </div>
+        <div class="c1up">
+          <div class="hide"></div>
+          <div class="m2">
+        </div>
+        </div>
+        <div class="c1up">
+          <div class="hide"></div>
+          <div class="m3">
+        </div>
+        </div>
+        <div class="c1up">
+          <div class="hide"></div>
+          <div class="m4">
+        </div>
+        </div>
+      </div>
+      <div class="morebutton">
+        <a href="page2.html" style="  border-radius: 6px;
+        background-color: #eb5e28;  cursor: pointer;"><button>More</button></a>
+      </div>
+    </main>
 
-    <div class="more">
-      <div class="m1"></div>
-      <div class="m2"></div>
-      <div class="m3"></div>
-      <div class="m4"></div>
-    </div>
+    <footer style="margin-top: 10rem;">
+      <div class="main">
+        <div class="store" style="display: flex; justify-content:space-evenly; width:100%;">
+          <div class="storelogo"></div>
+          <div class="storeinfo" style="width: 25%;font-size: 1.2rem;margin-left: .6rem;margin-top: 4rem;/* top: 4rem; *//* position: relative; */">
+            <p>1234 xyz road, Mumbai</p>
+            <p>xyzstore@email.com</p>
+            <p>+91 1234567890</p>
+          </div>
 
-    <!-- footer -->
-
+          <div class="products" style="padding-left:2rem; width:25%;">
+            <ul style="margin-top: 3rem;">
+              <li>BURGERS</li>
+              <li>BREAKFAST PRODUCTS</li>
+              <li>DESSERTS</li>
+              <li>CRISPY FLAVORS</li>
+              <li>KIDS MENUS</li>
+            </ul>
+          </div>
+          <div class="qucklink" style="padding-left:2rem;width:25%;">
+            <p style="position:relative;top:2rem;">QUICK LINKS</p>
+            <ul style="margin-top: 3rem;"">
+              <li>HOME</li>
+              <li>MENU</li>
+              <li>ABOUT US</li>
+              <li>CONTACTS</li>
+            </ul>
+          </div>
+          <div class="opeing" style="padding-left:2rem;width:25%;margin-top: 1rem; border-left: 2px solid black;">
+            <p style="margin-top:3rem;margin-left: 5rem;">OPENING HOUR</p>
+            <p style="margin-top:.6rem;margin-left:3rem;">Monday - Friday: <span>8am - 4pm</span></p>
+            <p style="margin-top:.4rem;margin-left:3rem;">Saturday: <span>8am - 12am</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="contaner" style="display: flex;">
+        <div class="copywritetext" style="margin-top:.8rem;">
+          <p>Copyright &copy; 2024 FoodPicker. All rights reserved</p>
+        </div>
+        <div class="sociallink" style="display: flex">
+          <div class="fb"></div>
+          <div class="insta"></div>
+          <div class="tweeter"></div>
+        </div>
+      </div>
+    </footer>
     <script>
       const clearInput = () => {
         const input = document.getElementsByTagName("input")[0];
@@ -92,6 +200,21 @@
 
         // Start the text animation with the initial index (0)
         animateText(0);
+      });
+
+      //Scrolling Smooth
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Set up smooth scrolling
+      gsap.to(".contaner", {
+        y: () => -document.documentElement.clientHeight, // Adjust the multiplier as needed
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".contaner",
+          start: "top top",
+          end: "bottom bottom",
+          scrub: 1, // Set to 1 for a 1:1 scrolling ratio
+        },
       });
     </script>
   </body>

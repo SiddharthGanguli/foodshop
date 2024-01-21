@@ -6,6 +6,11 @@
 body {
   background-color: #f5cac3;
 }
+.flex1 {
+  width: 100%;
+  height: 90rem;
+  background-color: #3a5a40;
+}
 .navbar {
   height: 4rem;
   width: 100%;
@@ -112,17 +117,17 @@ form:valid input {
 }
 
 /* a {
-  display: none;
-  position: absolute;
-  top: 70px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  width: 100%;
-} */
+    display: none;
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+  } */
 
 form:valid a {
   display: block;
@@ -143,97 +148,16 @@ form:valid a {
   padding-left: 1.3rem;
   font-size: 18px;
 }
-
 .boxstyle {
   width: 30.51113rem;
   margin-left: 58rem;
   margin-top: -18rem;
   height: 58.4725rem;
   border-radius: 7.6875rem;
-  background: #f28482;
+  background: #a41412;
   transform: rotate(33.197deg);
   position: relative;
-  z-index: -1;
-}
-
-.comentry {
-  width: 50%;
-  height: 10rem;
-  position: relative;
-  top: -50rem;
-  z-index: -2;
-  font-size: 22px;
-  left: 3rem;
-}
-
-.food {
-  width: 19rem;
-  height: 19rem;
-  background-image: url(image/food3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: 35rem;
-  left: 5.34rem;
-}
-.leaf1 {
-  width: 8.80244rem;
-  height: 11.59475rem;
-  position: relative;
-  transform: rotate(-44.308deg);
-  background: url(image/leaf.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  left: 45.7rem;
-  bottom: 30rem;
-  z-index: -2;
-}
-.leaf2 {
-  width: 8.80244rem;
-  height: 11.59475rem;
-  position: relative;
-  transform: rotate(106deg);
-  background: url(image/leaf.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  left: 69.7rem;
-  bottom: 19rem;
-  z-index: -2;
-  filter: blur(2px);
-}
-#scrolling-container {
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  z-index: -2;
-  bottom: 32rem;
-  width: 85%;
-}
-h4 {
-  color: #eb5e28;
-  font-size: 24px;
-}
-#scrolling-text {
-  animation: scrollText 18s linear infinite;
-}
-
-@keyframes scrollText {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.footer {
-  overflow: hidden;
-  border: 1px solid black;
-  background-color: #2d2d2e;
-  width: 100%;
-  height: 30rem;
-  display: flex;
-  /* backface-visibility: hidden; */
+  z-index: 1;
 }
 
 .opening {
@@ -253,7 +177,7 @@ h4 {
 .more1 {
   width: 100%;
   display: flex;
-  margin-top: -50rem;
+  margin-top: -23rem;
   height: 19rem;
   justify-content: space-evenly;
 }
@@ -292,7 +216,7 @@ button:active {
   transform: scale(0.95);
 }
 ::-webkit-scrollbar {
-  width: 9px;
+  width: 11px;
 }
 
 ::-webkit-scrollbar-track {
@@ -359,83 +283,7 @@ li {
   margin-bottom: 0.5rem;
 }
 .fimage {
-  width: 8rem;
+  width: 80%;
   height: 60%;
   background-color: red;
-}
-.foods,
-.foods1 {
-  width: 100%;
-  z-index: 4;
-  height: 16rem;
-  justify-content: space-evenly;
-  top: -24rem;
-  display: flex;
-  position: relative;
-}
-.foods1 {
-  top: -8rem;
-}
-
-.food1,
-.food2,
-.food3,
-.food4 {
-  width: 20%;
-  height: 80%;
-  background-position: 48% 127%;
-  background-size: 76%;
-  background-repeat: no-repeat;
-}
-.food1 {
-  background-image: url(image/food1.png);
-}
-.food2 {
-  background-image: url(image/food2.png);
-}
-.food3 {
-  background-image: url(image/food3.png);
-}
-.food4 {
-  background-image: url(image/food4.png);
-}
-@media (max-width: 768px) {
-  /* Styles for smaller screens */
-  .navbar {
-    height: 8%;
-  }
-
-  .options {
-    width: 100%;
-    left: 0;
-  }
-
-  .searchbar {
-    left: 10%;
-  }
-
-  .oredernow {
-    width: 30%;
-    left: 20%;
-  }
-  .more {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: -50rem;
-    height: 19rem;
-  }
-
-  .m1,
-  .m2,
-  .m3,
-  .m4 {
-    border-radius: 24px;
-    width: 45%; /* Adjust the width as needed */
-    height: 90%;
-    background-color: #fff;
-    margin-bottom: 1rem; /* Add margin between the items */
-  }
-  /* Add more media query styles as needed */
 }

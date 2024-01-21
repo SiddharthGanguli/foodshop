@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #ffd7ba;
+  overflow-x: hidden;
+}
+.contaner {
+  width: 100%;
+  margin-top: 2rem;
+}
+.row {
+  width: 100%;
+  height: 19rem;
+  margin-top: 12rem;
+  display: flex;
+
+  justify-content: space-around;
+}
+.row1 {
+  width: 100%;
+  height: 19rem;
+  margin-top: 10rem;
+  display: flex;
+
+  justify-content: space-around;
+}
+.c1up .c1,
+.c2up .c2,
+.c3up .c3,
+.c4up .c4 {
+  position: relative;
+  border-radius: 24px;
+  margin-top: 1rem;
+  width: 100%;
+  height: 90%;
+  background-color: #fff;
+}
+.c2up:hover .hide {
+  transform: scaleY(1.5);
+}
+.c1up:hover .hide {
+  transform: scaleY(1.5);
+}
+
+.c3up:hover .hide {
+  transform: scaleY(1.5);
+}
+.c4up:hover .hide {
+  transform: scaleY(1.5);
+}
+.hide {
+  width: 20%;
+  position: absolute;
+  height: 40%;
+  background-color: rgb(255, 255, 255);
+  z-index: -2;
+  border-radius: 24px;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: bottom;
+}
+.c1up,
+.c2up,
+.c3up,
+.c4up {
+  width: 20%;
+  height: 90%;
+
+  z-index: 1;
+}
+
+.c1 {
+  position: relative;
+  border-radius: 24px;
+  margin-top: 1rem;
+  width: 20%;
+  height: 90%;
+  background-color: #fff;
+}
+.c2 {
+  border-radius: 24px;
+  margin-top: 1rem;
+  width: 20%;
+  height: 90%;
+  background-color: #fff;
+}
+.c3 {
+  border-radius: 24px;
+  margin-top: 1rem;
+  width: 20%;
+  height: 90%;
+  background-color: #fff;
+}
+.c4 {
+  border-radius: 24px;
+  margin-top: 1rem;
+  width: 20%;
+  height: 90%;
+  background-color: #fff;
+}
+.imager11 {
+  position: relative;
+  width: 83%;
+  height: 100%;
+  bottom: 8rem;
+  left: 1.5rem;
+  background-image: url(image/food4.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.imager12 {
+  position: relative;
+  width: 88%;
+  height: 80%;
+  bottom: 5.4rem;
+  left: 1rem;
+  background-image: url(image/food5.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.imager13 {
+  position: relative;
+  width: 88%;
+  height: 84%;
+  bottom: 5.6rem;
+  left: 1.34rem;
+  background-image: url(image/food6.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.imager14 {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  bottom: 9rem;
+  left: 2rem;
+  background-image: url(image/food1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.imager21 {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  bottom: 7rem;
+  left: 1rem;
+  background-image: url(image/food2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.imager22 {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  bottom: 7rem;
+  left: 1rem;
+  background-image: url(image/food3.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.imager23 {
+  position: relative;
+  width: 83%;
+  height: 106%;
+  bottom: 9rem;
+  left: 1.5rem;
+  background-image: url(image/food4.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* star ratting */
+
+.star-rating:before {
+  content: "★";
+  color: #ff8b03;
+  font-size: 12px;
+  position: relative; /* Adjust the font size to set the height and width of the stars */
+  left: 1rem;
+}
+.star-rating[data-rating="1"]:before {
+  content: "★★★★★";
+}
+
+.star-rating[data-rating="2"]:before {
+  content: "★★★★☆";
+}
+
+.star-rating[data-rating="3"]:before {
+  content: "★★★☆☆";
+}
+
+.star-rating[data-rating="4"]:before {
+  content: "★★☆☆☆";
+}
+
+.star-rating[data-rating="5"]:before {
+  content: "★☆☆☆☆";
+}
+
+/* end star ratting */
+.value {
+  position: relative;
+  bottom: 8rem;
+}
+.name {
+  text-align: center;
+  font-weight: bolder;
+}
+.star-rating {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.foodcont {
+  position: relative;
+  left: 1rem;
+  top: 1.2rem;
+  font-weight: lighter;
+}
+.price {
+  position: relative;
+  left: 1rem;
+  top: 1.9rem;
+  font-size: larger;
+}
+p {
+  color: #000;
+  font-family: serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.00563rem;
+}
+.buy {
+  width: 2.4375rem;
+  height: 2.0625rem;
+  background-color: #f97b21;
+  left: 14rem;
+  top: -8rem;
+  position: relative;
+  background-image: url(image/bag.png);
+  background-size: 60% 70%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  background-position: 8px 5px;
+}
+.heart {
+  width: 2.2375rem;
+  height: 1.90625rem;
+  left: 14.2rem;
+  top: -18.66rem;
+  position: relative;
+  background-image: url(image/heart.png);
+  background-size: 60% 70%;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  background-position: 8px 5px;
+}
+.menu {
+  width: 100%;
+  height: 6rem;
+  position: relative;
+  display: flex;
+  left: 3rem;
+  justify-content: space-around;
+}
+.m1,
+.m2,
+.m3,
+.m4,
+.m5 {
+  box-shadow: 3px 0px 9px -1.7px;
+  width: 11%;
+  height: 55%;
+  border-radius: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+.m1 p,
+.m2 p,
+.m3 p,
+.m4 p,
+.m5 p {
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 4rem;
+  top: -0.4rem;
+}
+.m3 p {
+  top: -0.6rem;
+}
+.m1logo {
+  width: 14%;
+  height: 40%;
+  background-image: url(image/burger.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 1rem;
+  left: 1.6rem;
+}
+
+.m2logo {
+  width: 14%;
+  height: 40%;
+  background-image: url(image/pizza.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 1rem;
+  left: 1.6rem;
+}
+.m3logo {
+  width: 14%;
+  height: 46%;
+  background-image: url(image/french-fries.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 1rem;
+  left: 1.6rem;
+}
+.m4logo {
+  width: 14%;
+  height: 46%;
+  background-image: url(image/salad.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 1rem;
+  left: 1.6rem;
+}
+main {
+  min-height: 100vh;
+  margin-bottom: -100px;
+}
+footer {
+  width: 100%;
+  height: 20rem;
+  background-color: #f28482;
+}
+.main {
+  width: 100%;
+  height: 80%;
+  background-color: #f28482;
+  display: flex;
+  justify-content: space-between;
+}
+.Contaner {
+  width: 100%;
+  height: 5%;
+  border-top: 2px solid black;
+  justify-content: center;
+}
